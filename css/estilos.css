@@ -1,0 +1,163 @@
+/* Paleta profesional mejorada */
+:root {
+  --azul-oscuro: #16213e;
+  --azul-principal: #274690;
+  --azul-acento: #009ffd;
+  --gris-suave: #f4f7fa;
+  --gris-medio: #e9eef6;
+  --blanco: #ffffff;
+  --texto-principal: #1a2238;
+  --texto-secundario: #4b5563;
+  --borde-suave: #dbe2ef;
+}
+
+/* Aplica la fuente Roboto a todo el documento */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--gris-suave);
+  color: var(--texto-principal);
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(22,33,62,0.08);
+}
+
+/* Estilo para los enlaces del menú */
+nav a {
+  margin: 0 10px;
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: var(--azul-acento);
+}
+
+/* Estilo general de las secciones */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: var(--blanco);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(22,33,62,0.04);
+  margin-bottom: 2rem;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Sección de bienvenida con fondo de imagen */
+#bienvenida {
+  background: linear-gradient(rgba(22,33,62,0.7), rgba(0,159,253,0.5)), url('../img/fondo.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  text-align: center;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor con fondo oscuro transparente */
+.contenedor-bienvenida {
+  background-color: rgba(22, 33, 62, 0.7);
+  padding: 2rem 3rem;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 24px rgba(22,33,62,0.15);
+}
+
+/* Estilo de la imagen de perfil */
+.contenedor-bienvenida img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 4px solid var(--azul-acento);
+  box-shadow: 0 2px 12px rgba(0,159,253,0.10);
+}
+
+/* Sección "Sobre mí" con detalle visual */
+#sobremi {
+  background-color: var(--blanco);
+  border-left: 5px solid var(--azul-acento);
+  color: var(--texto-secundario);
+}
+
+/* Galería de proyectos con Flexbox */
+.galeria-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Estilo individual de cada proyecto */
+.proyecto {
+  flex: 1 1 45%;
+  background: var(--gris-medio);
+  padding: 1rem;
+  border: 1px solid var(--borde-suave);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(22,33,62,0.06);
+  color: var(--texto-principal);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.proyecto:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 24px rgba(0,159,253,0.10);
+}
+
+/* Imagen del proyecto */
+.proyecto img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Sección de contacto con fondo profesional */
+#contacto {
+  background-color: #e3f2fd;
+  border-left: 5px solid var(--azul-acento);
+  color: var(--texto-principal);
+  box-shadow: 0 2px 12px rgba(0,159,253,0.07);
+}
+#contacto h2 {
+  color: var(--azul-principal);
+}
+#contacto .redes a {
+  color: var(--azul-acento);
+}
+#contacto .redes a:hover {
+  color: var(--azul-oscuro);
+}
+
+/* Estilo de iconos de redes sociales */
+.redes a {
+  margin: 0 10px;
+  color: var(--azul-acento);
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.redes a:hover {
+  color: var(--azul-oscuro);
+}
